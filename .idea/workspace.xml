@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="" />
+    <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-API/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-API/server/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/models/serie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1nmcqfuCFvk4VpXytqrHD1pqGfB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../curso-bootstrap" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -36,16 +53,32 @@
       <workItem from="1611998900269" duration="32219000" />
       <workItem from="1612041526341" duration="37000" />
       <workItem from="1612084400738" duration="18354000" />
+      <workItem from="1612110246075" duration="6102000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1612084781265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612084781265" />
+    <state x="824" y="418" key="Github.ShareDialog" timestamp="1612110297803">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="824" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612110297803" />
+    <state x="773" y="218" key="Github.UntrackedFilesDialog" timestamp="1612110304842">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="773" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612110304842" />
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612110317089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612110317089" />
   </component>
 </project>

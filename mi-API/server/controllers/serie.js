@@ -4,7 +4,7 @@ const serieController = {};
 serieController.getSeries = async (req, res) => {
     const series = await Serie.find()
         .catch((err) => {
-            console.error(err.status(500).json({"message": err.message}));
+            console.error(err);
         });
     res.json(series);
 };
@@ -21,7 +21,7 @@ serieController.createSerie = async (req, res) => {
     const series = new Serie(req.body);
     await series.save()
         .catch(err => {
-            console.error(err.status(500).json({"message": err.message}));
+            console.error(err);
         });
     res.json({'estado': 'Serie insertada correctamente'});
 };
