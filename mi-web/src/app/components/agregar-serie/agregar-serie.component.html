@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row p-5">
+    <div class="col col-sm-6 col-md-6 col-lg-5 col-xl-5">
+      <div class="card px-5 ">
+        <form>
+          <div class="mb-3">
+            <label class="form-label mt-3">Titulo Serie</label>
+            <input type="name" class="form-control" id="tituloSerie" aria-describedby="titulo">
+            <div id="titulo" class="form-text">Nombre de la serie.</div>
+          </div>
+          <div class="input-group mb-3">
+            <select class="form-select" id="categoria">
+              <option selected>Elige una categoria...</option>
+              <option value="1">Acción</option>
+              <option value="2">Comedia</option>
+              <option value="3">Terror</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Numero Capitulos</label>
+            <input  class="form-control" id="capituloSerie" aria-describedby="capitulos">
+            <div id="capitulos" class="form-text">Numero de Capitulos.</div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Año de emisión</label>
+            <input  class="form-control" id="emisiónSerie" aria-describedby="emisión">
+            <div id="emición" class="form-text">Año de emición.</div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Imagen de la serie</label>
+            <input type="name" class="form-control" id="imagenSerie" aria-describedby="imagen">
+            <div id="imagen" class="form-text">imagen de la serie.</div>
+          </div>
+          <div class="form-group">
+            <label for="Textarea">Sinopsis</label>
+            <textarea class="form-control" id="Textarea" rows="4"></textarea>
+          </div>
+        </form>
+        <div class="container mb-3 d-flex">
+          <button type="submit" class="btn btn-primary me-3 ">AÑADIR</button>
+          <button type="reset" class="btn btn-primary">LIMPIAR</button>
+        </div>
+      </div>
+    </div>
+    <div class="col col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="card px-5 ">
+        <img src="assets/naruto.jpg" class="rounded mt-3" >
+        <div class="card-body" >
+          <div class="alert alert-info mb-3 " role="alert">
+            <h5 class="card-title">TITULO</h5>
+          </div>
+          <div class="alert alert-info mb-3 " role="alert">
+            <p class="card-text">CAPITULOS</p>
+          </div>
+          <div class="alert alert-info mb-3 " role="alert">
+            <p class="card-text">EMISION</p>
+          </div>
+          <div class="alert alert-info mb-3 " role="alert">
+            <p class="card-text">SINOPSIS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

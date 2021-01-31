@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <p class="navbar-brand ms-5 text-primary" >STIVENWAR SERIES</p>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#first" >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse me-5" id="first">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item ">
+          <a class="nav-link " routerLinkActive="active" routerLink="/lista-series"><button class="btn btn-outline-primary" (click)="mostrar()"><i class="fa fa-home"></i>INICIO</button></a></li>
+        <li class="nav-item">
+          <a class="nav-link " routerLinkActive="active" routerLink="lista-series/añadir"><button class="btn btn-outline-primary" (click)="ocultar()"><i class="fa fa-plus-circle"></i>AÑADIR</button></a></li>
+        <li class="nav-item">
+          <a class="nav-link " routerLinkActive="active" routerLink="lista-series/perfil"><button class="btn btn-outline-primary" (click)="ocultar()"><i class="fa fa-user"></i>PERFIL</button></a></li>
+      </ul>
+      <form class="d-flex" id="caja" >
+        <input type="text" class="form-control" placeholder="BUSCAR">
+        <button type="button" class="btn btn-outline-primary">
+          BUSCAR
+        </button>
+      </form>
+    </div>
+</nav>
