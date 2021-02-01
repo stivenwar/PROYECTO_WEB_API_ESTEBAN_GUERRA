@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Serie} from "../modelos/serie";
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +11,18 @@ export class SerieServiceService {
   serie: Serie[];
   readonly URL_API = 'http://localhost:4000/api/series';
 
-  constructor(private Http: HttpClient) {
+  constructor(private http: HttpClient) {
     this.elegirSerie = new Serie()
   }
 
+  getSeries(){
+    return this.http.get(this.URL_API);
+  }
+  postSerie(serie: Serie){
+    return this.http.post(this.URL_API,serie)
+  }
+  deleteSerie(id:number){
+    return this.http.delete(this.URL_API+`/${id}`)
+  }
 
 }

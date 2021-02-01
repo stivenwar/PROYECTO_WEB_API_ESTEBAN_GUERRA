@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" afterDir="false" />
+    <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="nuevo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-API/server/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/models/serie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,15 +78,37 @@
       <workItem from="1611998900269" duration="32219000" />
       <workItem from="1612041526341" duration="37000" />
       <workItem from="1612084400738" duration="18354000" />
-      <workItem from="1612110246075" duration="6102000" />
+      <workItem from="1612110246075" duration="6151000" />
+      <workItem from="1612177780930" duration="13106000" />
     </task>
+    <task id="LOCAL-00001" summary="nuevo">
+      <created>1612133530719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612133530719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="nuevo" />
+    <option name="LAST_COMMIT_MESSAGE" value="nuevo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1612084781265">
@@ -76,9 +123,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="773" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612110304842" />
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612110317089">
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612133540004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612110317089" />
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612133540004" />
   </component>
 </project>

@@ -8,15 +8,7 @@ serieController.getSeries = async (req, res) => {
         });
     res.json(series);
 };
-serieController.createSerie = async (req, res) => {
-    const series = new Serie(req.body);
-    console.log(series)
-    await series.save()
-        .catch(err => {
-            console.error(err);
-        });
-    res.json({'status': 'Serie insertada correctamente'});
-};
+
 serieController.createSerie = async (req, res) => {
     const series = new Serie(req.body);
     await series.save()

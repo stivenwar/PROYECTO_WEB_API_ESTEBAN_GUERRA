@@ -1,19 +1,20 @@
 <div class="container">
   <div class="row ">
-    <div class="col col-sm-7 col-md-5 col-lg-4 col-xl-4 p-4"  *ngFor="let i of [1,1,1,1,11,1,1,1,2]">
+    <div class="col col-sm-7 col-md-5 col-lg-4 col-xl-4 p-4"  *ngFor="let s of series ">
       <div class="card" style="width: 20rem;">
-        <a href="lista-series/serie">
-          <img src="assets/naruto.jpg" class="card-img-top" alt="...">
+        <a class="nav-link " routerLinkActive="active" routerLink="/lista-series/serie">
+          <img [src]="s.imagen" [alt]="s.titulo" class="card-img-top" alt="...">
         </a>
         <div class="card-body" >
-          <h5 class="card-title">titulo</h5>
-          <p class="card-text">CATEGORIA</p>
-          <p class="card-text">CAPITULOS</p>
-          <p class="card-text">EMISION</p>
-          <p class="card-text">SINOPSIS</p>
-          <div class="container">
-            <a href="lista-series/editar/:id" class="btn btn-info me-5">EDITAR</a>
-            <a href="#" class="btn btn-danger">ELIMINAR</a>
+          <h5 class="card-title">TITILO : {{s.titulo}}</h5>
+          <p class="card-text">CATEGORIA : {{s.categoria}}</p>
+          <p class="card-text">CAPITULOS : {{s.capitulos}}</p>
+          <p class="card-text">EMISION : {{s.emision}}</p>
+          <p class="card-text">SINOPSIS : {{s.sinopsis}}</p>
+          <div class="container d-flex">
+            <a class="nav-link " routerLinkActive="active" routerLink="/lista-series/editar/:id" >
+              <button class="btn btn-info ">EDITAR</button> </a>
+            <a href="#" class="nav-link " (click)="deleteSerie(s._id)"><button class="btn btn-danger ">ELIMINAR</button></a>
           </div>
         </div>
       </div>

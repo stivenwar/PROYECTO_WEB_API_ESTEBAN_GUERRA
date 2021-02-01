@@ -6,6 +6,7 @@ import {AgregarSerieComponent} from "./components/agregar-serie/agregar-serie.co
 import {EditarSerieComponent} from "./components/editar-serie/editar-serie.component";
 import {SerieComponent} from "./components/serie/serie.component";
 
+
 const routes: Routes = [
   {
     path: '',

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Serie} from "../../modelos/serie";
+import {SerieServiceService} from "../../services/serie-service.service";
+
 
 @Component({
   selector: 'app-lista-series',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaSeriesComponent implements OnInit {
 
-  constructor() { }
+  series: Serie[] = [];
+
+
+
+  constructor(private serieService: SerieServiceService) { }
 
   ngOnInit(): void {
+    this.getSeries();
   }
 
+  getSeries(){
+    this.serieService.getSeries()
+      .subscribe(res => {
+        this.series =<Serie[]> res;
+      },
+        error => console.error(error));
+  }
+
+  deleteSerie(id: number) {
+    if (confirm('seguro que deseas eliminarlo')){
+      this.serieService.deleteSerie(id)
+        .subscribe(res => {
+          this.getSeries();
+        });
+    }
+
+  }
 }

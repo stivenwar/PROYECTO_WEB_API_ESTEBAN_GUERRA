@@ -1,5 +1,5 @@
  export class Serie {
-  id: number;
+  _id: number;
   imagen: string;
   titulo: string;
   categoria: string;
@@ -7,6 +7,7 @@
   emision: string;
   sinopsis: string
    constructor() {
+    this._id = null;
     this.imagen = '';
     this.titulo = '';
     this.categoria = '';

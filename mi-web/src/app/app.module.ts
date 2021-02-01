@@ -10,6 +10,10 @@ import { NavegacionComponent } from './components/navegacion/navegacion.componen
 import { AgregarSerieComponent } from './components/agregar-serie/agregar-serie.component';
 import { EditarSerieComponent } from './components/editar-serie/editar-serie.component';
 import { SerieComponent } from './components/serie/serie.component';
+import { HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+
+
 
 @NgModule({
   declarations: [
@@ -20,10 +24,14 @@ import { SerieComponent } from './components/serie/serie.component';
     AgregarSerieComponent,
     EditarSerieComponent,
     SerieComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
