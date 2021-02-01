@@ -1,68 +1,51 @@
 <div class="container">
   <div class="row p-5">
-    <div class="col col-sm-6 col-md-6 col-lg-5 col-xl-5">
-      <div class="card px-5 ">
-        <form>
-          <div class="mb-3">
-
-            <label class="form-label mt-3">Titulo Serie</label>
-            <input type="text" name="titulo" class="form-control" id="tituloSerie" aria-describedby="titulo" placeholder="Titulo de la Serie"
-            [(ngModel)]="serieService.elegirSerie.titulo">
-            <div id="titulo" class="form-text">Titulo de la serie : </div>
-          </div>
-          <div class="input-group mb-3">
-            <select class="form-select" id="categoria">
-              <option selected>Elige una categoria...</option>
-              <option value="1">Acción</option>
-              <option value="2">Comedia</option>
-              <option value="3">Terror</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Numero Capitulos</label>
-            <input  class="form-control" id="capituloSerie" aria-describedby="capitulos">
-            <div id="capitulos" class="form-text">Numero de Capitulos.</div>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label">Año de emisión</label>
-            <input  class="form-control" id="emisiónSerie" aria-describedby="emisión">
-            <div id="emición" class="form-text">Año de emición.</div>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Imagen de la serie</label>
-            <input type="name" class="form-control" id="imagenSerie" aria-describedby="imagen">
-            <div id="imagen" class="form-text">imagen de la serie.</div>
-          </div>
-          <div class="form-group">
-            <label for="Textarea">Sinopsis</label>
-            <textarea class="form-control" id="Textarea" rows="4"></textarea>
-          </div>
-        </form >
-        <form #serieForm="ngForm" (ngSubmit)="createSerie(serieService.elegirSerie,serieForm)">
-          <div class="container mb-3 d-flex">
-            <button type="submit" class="btn btn-primary me-3 " >AÑADIR</button>
-            <button type="reset" class="btn btn-primary">LIMPIAR</button>
-          </div>
-        </form>
-
+    <div class="col col-sm-12 col-md-6 col-lg-5 col-xl-5">
+      <div class="card">
+        <div class="card-body px-5 ">
+          <form #serieForm="ngForm" (ngSubmit)="createSerie(serieService.elegirSerie,serieForm)">
+            <input type="hidden" name="_id" [(ngModel)]="serieService.elegirSerie._id">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Titulo serie"
+                     name="titulo" [(ngModel)]="serieService.elegirSerie.titulo"  required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Capitulos Serie"
+                     name="capitulos" [(ngModel)]="serieService.elegirSerie.capitulos"  required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="categoria"
+                     name="categorias" [(ngModel)]="serieService.elegirSerie.categorias"  required>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Emisión"
+                     name="emision" [(ngModel)]="serieService.elegirSerie.emision"  required>
+            </div>
+            <div class="form-group">
+              <textarea type="text" class="form-control" placeholder="Sinopsis"
+                        name="sinopsis" [(ngModel)]="serieService.elegirSerie.sinopsis"   required></textarea>
+            </div>
+            <div class="form-group">
+              <textarea type="text" class="form-control" placeholder="URL foto"
+                        name="imagen" [(ngModel)]="serieService.elegirSerie.imagen " required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-inline " >GUARDAR</button>
+            <button type="reset" class="btn btn-danger btn-inline">LIMPIAR</button>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="col col-sm-6 col-md-6 col-lg-6 col-xl-6">
-      <div class="card px-5 ">
-        <img src="assets/naruto.jpg" class="rounded mt-3" >
+      </div>
+
+    <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6" >
+      <div class="card px-5">
+        <img src="{{serieService.elegirSerie.imagen}}" class="rounded mt-3" >
         <div class="card-body" >
-          <div class="alert alert-info mb-3 " role="alert">
-            <h5 class="card-title">TITULO</h5>
-          </div>
-          <div class="alert alert-info mb-3 " role="alert">
-            <p class="card-text">CAPITULOS</p>
-          </div>
-          <div class="alert alert-info mb-3 " role="alert">
-            <p class="card-text">EMISION</p>
-          </div>
-          <div class="alert alert-info mb-3 " role="alert">
-            <p class="card-text">SINOPSIS</p>
+          <div class="alert alert-info" role="alert">
+            <h5 class="card-title">TITULO: {{serieService.elegirSerie.titulo}} </h5>
+            <p class="card-text">CAPITULOS: {{serieService.elegirSerie.capitulos}} </p>
+            <p class="card-text">CATEGORIA: {{serieService.elegirSerie.categorias}}</p>
+            <p class="card-text">EMISION: {{serieService.elegirSerie.emision}}</p>
+            <p class="card-text">SINOPSIS: {{serieService.elegirSerie.sinopsis}}</p>
           </div>
         </div>
       </div>

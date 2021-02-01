@@ -2,7 +2,7 @@
   _id: number;
   imagen: string;
   titulo: string;
-  categoria: string;
+  categorias: string;
   capitulos: string;
   emision: string;
   sinopsis: string
@@ -10,7 +10,7 @@
     this._id = null;
     this.imagen = '';
     this.titulo = '';
-    this.categoria = '';
+    this.categorias = '';
     this.capitulos = '';
     this.emision = '';
     this.sinopsis = '';
