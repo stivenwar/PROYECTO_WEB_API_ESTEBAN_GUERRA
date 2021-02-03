@@ -23,7 +23,7 @@ serieController.getSerie = async (req, res) => {
     try {
 
         if (movie == null) {
-            return res.status(404).json({message: 'Movie not found'})
+            return res.status(404).json({message: 'Serie no encontrada'})
         }
         res.json(movie);
     }catch (err){
@@ -32,9 +32,8 @@ serieController.getSerie = async (req, res) => {
     res.status(201).json(movie);
 };
 serieController.updateSerie = async (req,res) => {
-    try{
+
         const serie = {
-            id:req.params.id,
             imagen:req.params.imagen ,
             titulo: req.params.titulo,
             capitulos:req.params.capitulos,
@@ -43,12 +42,18 @@ serieController.updateSerie = async (req,res) => {
             sinopsis:req.params.sinopsis
         };
 
-        const updatedMovie = await Serie.findByIdAndUpdate(serie.id, {$set: serie}, {new: true,
-            useFindAndModify: false});
-        res.status(201).json({message: 'serie actualizada'});
-    }catch (err){
-        res.status(400).json({message: err.message})
-    }
+        await Serie.findByIdAndUpdate(serie._id, {$set: serie}, {new: true,
+            useFindAndModify: false}).then(res =>{
+            res.status(201).json({message: 'serie actualizada'});
+        }).catch(err =>{
+            res.status(400).json({message: err.message})
+        });
+
+
+
+
+
+
 };
 serieController.deleteSerie = async (req, res) => {
     await Serie.findByIdAndDelete(req.params.id);

@@ -23,18 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-API/server/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/models/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +56,16 @@
       <recent name="C:\Users\esteb\Desktop\PROYECTO_WEB_API_ESTEBAN_GUERRA\mi-API" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="serie.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/mi-API/server/controllers/serie.js" working-dir="$PROJECT_DIR$/mi-API/server/controllers">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.serie.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -84,7 +82,7 @@
       <workItem from="1612210371509" duration="12460000" />
       <workItem from="1612253414646" duration="1959000" />
       <workItem from="1612262448219" duration="29243000" />
-      <workItem from="1612342662786" duration="18187000" />
+      <workItem from="1612342662786" duration="21729000" />
     </task>
     <task id="LOCAL-00001" summary="nuevo">
       <created>1612133530719</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612223406153</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="nuevo">
+      <created>1612365034183</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612365034183</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,10 +136,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="nuevo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1612262438446">
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1612364879799">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612262438446" />
+    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612364879799" />
     <state x="824" y="418" key="Github.ShareDialog" timestamp="1612110297803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -143,10 +148,74 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="773" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612110304842" />
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612223418496">
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1612367162150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612223418496" />
+    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.0.center" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.0.left" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.0.right" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1612367162150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612367162150" />
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612365040886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612365040886" />
     <state x="1019" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1612220961949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
