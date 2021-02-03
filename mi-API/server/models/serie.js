@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const serieSchema = ({
-    id:Number,
+    _id:Number,
     imagen: {type: String,required:true},
     titulo: {type: String,required:true},
     capitulos:{type: String,required:true},

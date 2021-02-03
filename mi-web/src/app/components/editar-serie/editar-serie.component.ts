@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {SerieServiceService} from "../../services/serie-service.service";
+
+import {ActivatedRoute, Router} from "@angular/router";
+import {Serie} from "../../modelos/serie";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-editar-serie',
@@ -7,9 +12,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarSerieComponent implements OnInit {
 
-  constructor() { }
+  serie: any;
 
-  ngOnInit(): void {
+  constructor(public serieService: SerieServiceService,
+              private router: Router,
+              private activateRouter: ActivatedRoute) {
   }
 
+  ngOnInit(): void {
+
+
+  }
+
+  editSerie(elegirSerie: number, serieForm: NgForm) {
+    const id =this.activateRouter.snapshot.params.id;
+    console.log(id)
+    this.serieService.updateSerie(id)
+      .subscribe(res => {
+        console.log(res)
+      });
+  }
 }

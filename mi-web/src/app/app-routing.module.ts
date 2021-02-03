@@ -31,7 +31,7 @@ const routes: Routes = [
   }
   ,
   {
-    path: 'lista-series/serie',
+    path: 'lista-series/serie/:id',
     component: SerieComponent
   }
 

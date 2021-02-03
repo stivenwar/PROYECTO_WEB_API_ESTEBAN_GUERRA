@@ -11,8 +11,13 @@ export class SerieServiceService {
   serie: Serie[];
   readonly URL_API = 'http://localhost:4000/api/series';
 
+
   constructor(private http: HttpClient) {
     this.elegirSerie = new Serie()
+  }
+
+  getSerie(id:number){
+    return this.http.get(this.URL_API+`/${id}`)
   }
 
   getSeries(){
@@ -24,5 +29,10 @@ export class SerieServiceService {
   deleteSerie(id:number){
     return this.http.delete(this.URL_API+`/${id}`)
   }
+
+  updateSerie(serie: Serie){
+    return this.http.put(this.URL_API+ `/${serie.id}`,serie)
+  }
+
 
 }

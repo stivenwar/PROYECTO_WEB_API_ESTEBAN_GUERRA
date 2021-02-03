@@ -12,8 +12,6 @@ export class ListaSeriesComponent implements OnInit {
 
   series: Serie[] = [];
 
-
-
   constructor(private serieService: SerieServiceService) { }
 
   ngOnInit(): void {
@@ -37,4 +35,5 @@ export class ListaSeriesComponent implements OnInit {
     }
 
   }
+
 }

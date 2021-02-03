@@ -1,12 +1,20 @@
-<div class="container">
-  <div class="card p-5 mx-auto" style="width: 40em">
-    <img src="assets/naruto.jpg" class="rounded " alt="...">
-    <div class="card-body" >
-      <h5 class="card-title">TITULO</h5>
-      <p class="card-text">CATEGORIA</p>
-      <p class="card-text">CAPITULOS</p>
-      <p class="card-text">EMISION</p>
-      <p class="card-text">SINOPSIS</p>
+<div class="container ">
+  <div class="row justify-content-md-center p-4">
+    <div class="col col-auto">
+        <div class="card border-primary text-center" style="width: 30rem;"  >
+         <div class="card-header bg-transparent border-primary">
+           <img [src]="serie.imagen"  class="card-img-top p-1" height="500px" width="300px" alt="imagen">
+          <div class="card-body" >
+            <h5 class="card-title">TITILO : {{serie.titulo}} </h5>
+            <p class="card-text">CATEGORIA : {{serie.categorias}} </p>
+            <p class="card-text">CAPITULOS : {{serie.capitulos}}</p>
+            <p class="card-text">EMISION : {{serie.emision}}</p>
+            <p class="card-text">SINOPSIS : {{serie.sinopsis}}</p>
+            <div class="container d-flex">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

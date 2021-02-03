@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row p-5">
-    <div class="col col-sm-12 col-md-6 col-lg-5 col-xl-5">
+    <div class="col col-sm-12 col-md-6">
       <div class="card">
         <div class="card-body px-5 ">
           <form #serieForm="ngForm" (ngSubmit)="createSerie(serieService.elegirSerie,serieForm)">
-            <input type="hidden" name="_id" [(ngModel)]="serieService.elegirSerie._id">
+            <input type="hidden" name="_id" [(ngModel)]="serieService.elegirSerie.id">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Titulo serie"
                      name="titulo" [(ngModel)]="serieService.elegirSerie.titulo"  required>
@@ -36,7 +36,7 @@
       </div>
       </div>
 
-    <div class="col col-sm-12 col-md-6 col-lg-6 col-xl-6" >
+    <div class="col col-12 col-md-6" >
       <div class="card px-5">
         <img src="{{serieService.elegirSerie.imagen}}" class="rounded mt-3" >
         <div class="card-body" >

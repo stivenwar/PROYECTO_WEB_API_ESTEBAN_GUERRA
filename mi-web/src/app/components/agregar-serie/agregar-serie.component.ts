@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {SerieServiceService} from "../../services/serie-service.service";
 import {Serie} from "../../modelos/serie";
 import {NgForm} from "@angular/forms";
-import {ActivatedRoute, Router} from "@angular/router";
+
 
 
 @Component({
@@ -21,10 +21,13 @@ export class AgregarSerieComponent implements OnInit {
   }
 
   createSerie(serie: Serie,form:NgForm) {
-    this.serieService.postSerie(serie)
-      .subscribe(res => {
-        console.log(res);
+      this.serieService.postSerie(serie)
+        .subscribe(res => {
+          console.log(res);
 
-      })
-  }
+        })
+    }
+
+
+
 }
