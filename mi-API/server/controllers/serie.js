@@ -11,47 +11,47 @@ serieController.getSeries = async (req, res) => {
 };
 
 serieController.createSerie = async (req, res) => {
-    const series = new Serie(req.body);
-    await series.save()
-        .catch(err => {
-            console.error(err);
-        });
-    res.json({'estado': 'Serie insertada correctamente'});
+    try{
+        console.log(req);
+        const series = new Serie(req.body);
+        console.log(series);
+        const newSerie = await series.save()
+        res.json({'estado': 'Serie insertada correctamente'});
+    }catch (err){
+        res.status(400).json({message: err.message});
+    }
+
+
 };
 serieController.getSerie = async (req, res) => {
-    const movie = await Serie.findById(req.params.id)
+    const serie = await Serie.findById(req.params.id)
     try {
 
-        if (movie == null) {
+        if (serie == null) {
             return res.status(404).json({message: 'Serie no encontrada'})
         }
-        res.json(movie);
+        res.status(201).json(serie);
     }catch (err){
         return res.status(500).json({message: err.message})
     }
-    res.status(201).json(movie);
+
 };
 serieController.updateSerie = async (req,res) => {
-
+    try{
         const serie = {
-            imagen:req.params.imagen ,
-            titulo: req.params.titulo,
-            capitulos:req.params.capitulos,
-            categorias:req.params.categorias,
-            emision:req.params.emision,
-            sinopsis:req.params.sinopsis
+            imagen:req.body.imagen ,
+            titulo: req.body.titulo,
+            capitulos:req.body.capitulos,
+            categorias:req.body.categorias,
+            emision:req.body.emision,
+            sinopsis:req.body.sinopsis
         };
-
-        await Serie.findByIdAndUpdate(serie._id, {$set: serie}, {new: true,
-            useFindAndModify: false}).then(res =>{
-            res.status(201).json({message: 'serie actualizada'});
-        }).catch(err =>{
-            res.status(400).json({message: err.message})
-        });
-
-
-
-
+       const ser= await Serie.findOneAndUpdate(req.params.id, {$set: serie}, {new: true,
+            useFindAndModify: false});
+       res.status(201).json({message: 'serie actualizada', serie: serie});
+    }catch (err){
+        res.status(400).json({message: err.message})
+    }
 
 
 };

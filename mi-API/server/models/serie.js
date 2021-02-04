@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const serieSchema = ({
-    _id:Number,
+const serieSchema =({
+    id:String,
     imagen: {type: String,required:true},
     titulo: {type: String,required:true},
     capitulos:{type: String,required:true},
