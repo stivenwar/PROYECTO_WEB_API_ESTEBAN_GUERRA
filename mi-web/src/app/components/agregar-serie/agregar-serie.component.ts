@@ -13,18 +13,23 @@ import {NgForm} from "@angular/forms";
 export class AgregarSerieComponent implements OnInit {
 
 
+  series: Serie;
+
 
   constructor(public serieService: SerieServiceService){ }
 
   ngOnInit(): void {
 
+
   }
 
   createSerie(serie: Serie,form:NgForm) {
+    this.series = serie;
+    console.log(this.series)
       this.serieService.postSerie(serie)
         .subscribe(res => {
-          console.log(res);
 
+          console.log(res);
         })
     }
 

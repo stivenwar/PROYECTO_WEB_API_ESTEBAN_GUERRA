@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="nuevo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/models/serie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +88,7 @@
       <workItem from="1612253414646" duration="1959000" />
       <workItem from="1612262448219" duration="29243000" />
       <workItem from="1612342662786" duration="22016000" />
-      <workItem from="1612425980971" duration="7477000" />
+      <workItem from="1612425980971" duration="29428000" />
     </task>
     <task id="LOCAL-00001" summary="nuevo">
       <created>1612133530719</created>
@@ -120,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612369174967</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="nuevo">
+      <created>1612433581725</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612433581725</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

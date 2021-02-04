@@ -12,7 +12,7 @@ import {NgForm} from "@angular/forms";
 })
 export class EditarSerieComponent implements OnInit {
 
-  serie: any;
+  serie: Serie;
 
   constructor(public serieService: SerieServiceService,
               private router: Router,
@@ -21,11 +21,10 @@ export class EditarSerieComponent implements OnInit {
 
   ngOnInit(): void {
 
-
   }
 
   editSerie(elegirSerie: number, serieForm: NgForm) {
-    const id =this.activateRouter.snapshot.params.id;
+    const id = this.activateRouter.snapshot.params.id;
     console.log(id)
     this.serieService.updateSerie(id)
       .subscribe(res => {
