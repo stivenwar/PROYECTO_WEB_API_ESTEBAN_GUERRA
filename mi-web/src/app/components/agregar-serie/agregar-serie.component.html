@@ -1,7 +1,6 @@
 
-  <div class="row align-items-center">
-    <div class="col ">
-
+<div class="row align-items-center" >
+    <div class="col col-sm-6">
       <div class="container">
         <div class="card text-center">
           <h5>COLOCA LOS DATOS DE LA SERIE</h5>
@@ -12,36 +11,52 @@
           <div class="card-body px-5 ">
             <form #serieForm="ngForm" (ngSubmit)="createSerie(serieService.elegirSerie,serieForm)">
               <div class="container">
+                <input type="number" [(ngModel)]="serieService.elegirSerie._id" name="_id" hidden >
                 <div class="input-field">
-                  <input type="text" [(ngModel)]="serieService.elegirSerie.titulo" name="titulo" id="titulo"
-                         placeholder="Titulo de la serie" class="validate" required>
-                  <label for="titulo">Titulo</label>
+                  <label for="imagen">URL Imagen Serie</label>
+                  <textarea class="materialize-textarea validate" [(ngModel)]="serieService.elegirSerie.imagen"
+                            name="imagen" id="imagen"  required></textarea>
                 </div>
                 <div class="input-field">
+                  <div class="input-field">
+
+                  </div>
+                  <label for="titulo">Titulo de la Serie</label>
+                  <input type="text" [(ngModel)]="serieService.elegirSerie.titulo" name="titulo" id="titulo"
+                         class="validate" required>
+
+                </div>
+                <div class="input-field">
+                  <label for="capitulos">Capitulos de la Serie</label>
                   <input type="number" [(ngModel)]="serieService.elegirSerie.capitulos" name="capitulos"
-                         id="capitulos" placeholder="Capitulos de la serie" class="validate" required>
-                  <label for="capitulos">Capitulos</label>
+                         id="capitulos"  class="validate" required>
+
+                </div>
+                <div class="input-field">
+                  <label for="emision">Año de Emisión </label>
+                  <input type="number" [(ngModel)]="serieService.elegirSerie.emision" name="emision"
+                         id="emision"  class="validate" required>
                 </div>
 
                 <div class="input-field">
-                  <label for="sinopsis">Sinopsis</label>
+                  <label for="sinopsis">Sinopsis de la Serie</label>
                   <textarea id="sinopsis" class="materialize-textarea validate"
                             [(ngModel)]="serieService.elegirSerie.sinopsis" name="sinopsis"
-                            placeholder="Sinopsis de la serie" required></textarea>
-                </div>
-                <div class="input-field">
-                  <label for="imagen">Imagen URL</label>
-                  <textarea class="materialize-textarea validate" [(ngModel)]="serieService.elegirSerie.imagen"
-                            name="imagen" id="imagen" placeholder="Imagen de la serie" required></textarea>
+                             required></textarea>
                 </div>
                 <div>
-                  <label for="categorias">Selecciona Categoria</label>
+                  <label for="categorias">Selecciona Categoria de la Serie</label>
                   <select class="custom-select" [(ngModel)]="serieService.elegirSerie.categorias" name="categorias"
                           id="categorias">
+                    <option></option>
                     <option value="Acción">Acción</option>
                     <option value="Cómedia">Cómedia</option>
                     <option value="Terror">Terror</option>
                   </select>
+                </div>
+                <div class="container d-flex ">
+                  <button class="btn me-4 mt-4" type="submit"> Añadir</button>
+                  <button class="btn ms-4 mt-4" type="reset">Limpiar</button>
                 </div>
               </div>
             </form>
@@ -55,25 +70,28 @@
           <div class="card-body">
             <div class="container">
               <div>
-                <img class="rounded " width="300" height="300"
-                     src="{{serieService.elegirSerie.imagen}}">
+                <img class="rounded " width="350" height="300" src="{{serieService.elegirSerie.imagen}}" alt="IMAGEN SERIE">
               </div>
               <div>
                 <label for="titulo">Titulo</label>
-                <input type="text" [(ngModel)]="serieService.elegirSerie.titulo" name="titulo" readonly>
+                <input type="text" [(ngModel)]="serieService.elegirSerie.titulo" name="titulo"  readonly>
               </div>
               <div>
                 <label for="capitulos">Capitulos</label>
                 <input type="text" [(ngModel)]="serieService.elegirSerie.capitulos" name="capitulos" readonly>
               </div>
               <div>
-                <label for="categorias">Categoria</label>
-                <input type="text" [(ngModel)]="serieService.elegirSerie.categorias" name="categorias" readonly>
+                <label for="emision">Año de Emisión</label>
+                <input type="text" [(ngModel)]="serieService.elegirSerie.emision" name="emision" readonly>
               </div>
               <div>
                 <label for="sinopsis">Sinopsis</label>
                 <textarea id="textarea" class="materialize-textarea "
                           readonly>{{serieService.elegirSerie.sinopsis}}</textarea>
+                <div>
+                  <label for="categorias">Categoria</label>
+                  <input type="text" [(ngModel)]="serieService.elegirSerie.categorias" name="categorias" readonly>
+                </div>
               </div>
             </div>
           </div>

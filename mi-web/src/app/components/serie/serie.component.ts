@@ -1,8 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {SerieServiceService} from "../../services/serie-service.service";
 import {Serie} from "../../modelos/serie";
 import {ActivatedRoute} from "@angular/router";
-import {error} from "@angular/compiler/src/util";
+
 
 @Component({
   selector: 'app-serie',
@@ -11,30 +11,32 @@ import {error} from "@angular/compiler/src/util";
 })
 export class SerieComponent implements OnInit {
 
-
-  serie:any;
-
-
+  serie : Serie;
+  series : Serie;
   constructor(private activatedRoute: ActivatedRoute,
               private serieService: SerieServiceService) { }
 
   ngOnInit(): void {
+    this.series = new Serie();
+    this.getSerie();
 
-  this.getSerie();
   }
-
   getSerie(){
-    const id = this.activatedRoute.snapshot.params.id;
+    const id = this.activatedRoute.snapshot.params.id
     console.log(id)
-    this.serie = this.serieService.getSerie(id)
-      .subscribe(res =>{
-          console.log(res)
-        this.serie = res;
+    this.serieService.getSerie(id)
+      .subscribe(res => {
+          this.serie =<Serie> res;
+          console.log(this.serie)
 
-    });
-
-
+        },
+        error => console.error(error));
   }
+
+
+
+
+
 
 
 }

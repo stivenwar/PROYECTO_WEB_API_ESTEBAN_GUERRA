@@ -5,6 +5,7 @@ import {NgForm} from "@angular/forms";
 
 
 
+
 @Component({
   selector: 'app-agregar-serie',
   templateUrl: './agregar-serie.component.html',
@@ -16,13 +17,12 @@ export class AgregarSerieComponent implements OnInit {
   series: Serie;
 
 
+
   constructor(public serieService: SerieServiceService){ }
 
   ngOnInit(): void {
 
-
   }
-
   createSerie(serie: Serie,form:NgForm) {
     this.series = serie;
     console.log(this.series)

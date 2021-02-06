@@ -5,6 +5,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {Serie} from "../../modelos/serie";
 import {NgForm} from "@angular/forms";
 
+
 @Component({
   selector: 'app-editar-serie',
   templateUrl: './editar-serie.component.html',
@@ -12,7 +13,8 @@ import {NgForm} from "@angular/forms";
 })
 export class EditarSerieComponent implements OnInit {
 
-  serie: Serie;
+  serie :Serie;
+  id = this.activateRouter.snapshot.params.id;
 
   constructor(public serieService: SerieServiceService,
               private router: Router,
@@ -20,13 +22,24 @@ export class EditarSerieComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getSerie()
+  }
+  getSerie(){
+    const id = this.activateRouter.snapshot.params.id;
+    console.log(id)
+    this.serieService.getSerie(id)
+        .subscribe(res =>{
+          console.log(res)
+          this.serie =<Serie> res;
+
+        });
 
   }
 
-  editSerie(elegirSerie: number, serieForm: NgForm) {
-    const id = this.activateRouter.snapshot.params.id;
-    console.log(id)
-    this.serieService.updateSerie(id)
+  editSerie(id: Serie, serie: Serie, serieForm: NgForm) {
+    console.log(serie);
+      console.log(id);
+    this.serieService.updateSerie(id,serie)
       .subscribe(res => {
         console.log(res)
       });

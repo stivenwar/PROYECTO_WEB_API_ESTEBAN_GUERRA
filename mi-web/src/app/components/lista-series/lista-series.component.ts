@@ -10,7 +10,8 @@ import {SerieServiceService} from "../../services/serie-service.service";
 })
 export class ListaSeriesComponent implements OnInit {
 
-  series: Serie[] = [];
+  series: Serie[];
+
 
   constructor(private serieService: SerieServiceService) { }
 
@@ -22,15 +23,18 @@ export class ListaSeriesComponent implements OnInit {
     this.serieService.getSeries()
       .subscribe(res => {
         this.series =<Serie[]> res;
+        console.log(this.series)
       },
         error => console.error(error));
   }
 
-  deleteSerie(id: number) {
+  deleteSerie(_id: string) {
+    console.log(_id)
     if (confirm('seguro que deseas eliminarlo')){
-      this.serieService.deleteSerie(id)
+      this.serieService.deleteSerie(_id)
         .subscribe(res => {
           this.getSeries();
+
         });
     }
 

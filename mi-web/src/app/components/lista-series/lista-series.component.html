@@ -3,20 +3,21 @@
       <div class="col col-3"  *ngFor="let s of series ">
         <div class="card " >
           <div class="card-header bg-transparent ">
-            <a class="nav-link "  [routerLink]="['/lista-series/serie/',s.id]">
-              <img [src]="s.imagen" [alt]="s.titulo" class="card-img-top" height="300" width="400" alt="imagen">
+            <a class="nav-link"  [routerLink]="['/lista-series/serie/',s._id]">
+              <img src="{{s.imagen}}"  class="card-img-top" height="300" width="400" alt="imagen">
             </a>
           </div>
           <div class="card-body text-center" >
+            <h5 class="card-title">TITILO : {{s._id}}</h5>
             <h5 class="card-title">TITILO : {{s.titulo}}</h5>
             <p class="card-text ">CATEGORIA : {{s.categorias}}</p>
             <p class="card-text">CAPITULOS : {{s.capitulos}}</p>
             <p class="card-text">EMISION : {{s.emision}}</p>
             <p class="card-text">SINOPSIS : {{s.sinopsis}}</p>
             <div class="container d-flex">
-              <a class="nav-link "  [routerLink]="['/lista-series/editar/',s.id]" >
+              <a class="nav-link "  [routerLink]="['/lista-series/editar/',s._id]" >
                 <button class="btn btn-info ">EDITAR</button> </a>
-              <a href="#" class="nav-link " (click)="deleteSerie(s.id)"><button class="btn btn-danger ">ELIMINAR</button></a>
+              <a href="#" class="nav-link " (click)="deleteSerie(s._id)"><button class="btn btn-danger ">ELIMINAR</button></a>
             </div>
           </div>
         </div>

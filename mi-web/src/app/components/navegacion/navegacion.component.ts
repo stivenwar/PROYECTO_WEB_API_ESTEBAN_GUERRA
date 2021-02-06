@@ -12,11 +12,5 @@ export class NavegacionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  ocultar(){
-    document.getElementById("caja").style.opacity = "0";
-  }
 
-  mostrar() {
-    document.getElementById("caja").style.opacity = "1";
-  }
 }
