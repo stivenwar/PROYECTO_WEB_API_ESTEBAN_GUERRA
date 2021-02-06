@@ -12,6 +12,8 @@ import { EditarSerieComponent } from './components/editar-serie/editar-serie.com
 import { SerieComponent } from './components/serie/serie.component';
 import { HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+
 
 
 
@@ -30,7 +32,8 @@ import {FormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
 
   ],
   providers: [],

@@ -20,24 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="nuevo">
-      <change afterPath="$PROJECT_DIR$/mi-web/src/assets/verde.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/models/serie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/polyfills.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,6 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -100,7 +93,8 @@
       <workItem from="1612342662786" duration="22016000" />
       <workItem from="1612425980971" duration="29883000" />
       <workItem from="1612515678407" duration="10470000" />
-      <workItem from="1612556980158" duration="13375000" />
+      <workItem from="1612556980158" duration="13721000" />
+      <workItem from="1612609569915" duration="14167000" />
     </task>
     <task id="LOCAL-00001" summary="nuevo">
       <created>1612133530719</created>
@@ -151,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612475687431</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="nuevo">
+      <created>1612572254788</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612572254788</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,10 +252,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612475694370">
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612572260824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612475694370" />
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612572260824" />
     <state x="1019" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1612524430676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
