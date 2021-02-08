@@ -1,7 +1,7 @@
-<div class="row align-items-center" >
-    <div class="col col-sm-6">
-      <div class="container pt-4">
-        <div class="card ">
+<div class="row align-items-center ps-5" >
+    <div class="col col-sm-6 ps-5">
+      <div class="container pt-4 ps-5">
+        <div class="card " style="width: 45rem;">
           <div class="card-body px-5 ">
             <form #serieForm="ngForm" (ngSubmit)="createSerie(serieService.elegirSerie,serieForm)">
               <div class="form-control">
@@ -74,7 +74,7 @@
     </div>
     <div class="col mt-4">
       <div class="container">
-        <div class="card">
+        <div class="card" style="width: 45rem;">
           <div class="card-body px-5">
             <div class="form-control">
                 <div class="container">
@@ -92,7 +92,7 @@
                     </div>
                   </div>
                 </div>
-              <div class="form-control">
+              <div >
                 <label for="titulo">Titulo</label>
                 <input type="text" class="input-group" [(ngModel)]="serieService.elegirSerie.titulo" name="titulo"  readonly>
               </div>
