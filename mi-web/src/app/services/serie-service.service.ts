@@ -30,7 +30,7 @@ export class SerieServiceService {
     return this.http.delete(this.URL_API+`/${_id}`)
   }
 
-  updateSerie(_id: Serie, serie: Serie){
+  updateSerie(_id: string, serie: Serie){
     return this.http.put(this.URL_API+ `/${_id}`,serie)
   }
 

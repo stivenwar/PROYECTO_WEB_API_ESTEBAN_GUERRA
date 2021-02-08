@@ -36,9 +36,10 @@ export class EditarSerieComponent implements OnInit {
 
   }
 
-  editSerie(id: Serie, serie: Serie, serieForm: NgForm) {
+  editSerie(serie: Serie, serieForm: NgForm) {
     console.log(serie);
-      console.log(id);
+    const id = this.activateRouter.snapshot.params.id;
+    console.log(id)
     this.serieService.updateSerie(id,serie)
       .subscribe(res => {
         console.log(res)

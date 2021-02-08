@@ -1,21 +1,23 @@
-
 <div class="row align-items-center" >
     <div class="col col-sm-6">
-      <div class="container">
-        <div class="card text-center">
-          <h5>COLOCA LOS DATOS DE LA SERIE</h5>
-        </div>
-      </div>
-      <div class="container ">
+      <div class="container pt-4">
         <div class="card ">
           <div class="card-body px-5 ">
             <form #serieForm="ngForm" (ngSubmit)="createSerie(serieService.elegirSerie,serieForm)">
               <div class="form-control">
-                <input type="number" [(ngModel)]="serieService.elegirSerie._id" name="_id" hidden >
                 <div class="mb-3">
                   <label for="imagen" class="form-label" aria-describedby="imagen">URL Imagen Serie</label>
-                  <textarea class="input-group" [(ngModel)]="serieService.elegirSerie.imagen"
-                            name="imagen" id="imagen"  required></textarea>
+                  <textarea class="input-group" [(ngModel)]="miImagen"
+                            name="imagen" id="imagen" rows="1"  required></textarea>
+                  <div class="col m10">
+                    <label id="label" >
+                      <p ><b>Imagenes: </b><span *ngFor="let g of serieService.elegirSerie.imagen;let index=index">{{'Imagen : '+(index+1)+','}} </span></p>
+                    </label>
+                    <div>
+                      <span class="btn"  id="boton"   (click)="addImagen()"><i class="fa fa-plus-square" aria-hidden="true"></i>Añade Imagenes</span>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="mb-3">
                   <label for="titulo">Titulo de la Serie</label>
@@ -43,33 +45,54 @@
                 </div>
                 <div class="mb-3">
                   <label for="categorias">Selecciona Categoria de la Serie</label>
-                  <select class="input-group" [(ngModel)]="serieService.elegirSerie.categorias" name="categorias"
+                  <select class="input-group" [(ngModel)]="miCategoria" name="categorias"
                           id="categorias">
-                    <option></option>
+                    <option value="Elije Categoria" disabled>Elije Categoria</option>
                     <option value="Acción">Acción</option>
-                    <option value="Cómedia">Cómedia</option>
+                    <option value="Comedia">Comedia</option>
                     <option value="Terror">Terror</option>
                   </select>
+                  <div class="col m10">
+                    <label id="label2">
+                      <p><b>Categorias: </b><span *ngFor="let c of serieService.elegirSerie.categorias">{{c}} </span></p>
+                    </label>
+                  </div>
+                  <div class="col m2">
+                    <span class="btn"  id="botonCategoria"  (click)="addCategoria()"><i class="fa fa-plus-square" aria-hidden="true">Añade Categorias</i></span>
+                  </div>
                 </div>
-                <div class="container d-flex ">
-                  <button class="btn me-4 mt-4 btn-outline-primary" type="submit"> Añadir</button>
-                  <button class="btn ms-4 mt-4 btn-outline-danger" type="reset">Limpiar</button>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn  btn-primary "  type="submit"> Añadir Serie </button>
+                  <button class="btn  btn-danger "  type="reset"> Limpiar formulario</button>
                 </div>
+
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="col mt-5">
+    <div class="col mt-4">
       <div class="container">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body px-5">
             <div class="form-control">
-              <div>
-                <img  class="rounded" width="350" height="300"  src="{{serieService.elegirSerie.imagen}}" alt="IMAGEN SERIE" >
-              </div>
-              <div class="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 py-3">
+                      <h2 class="pb-2">Imagenes de la Serie</h2>
+                      <ngb-carousel id="carousel">
+                        <ng-template ngbSlide *ngFor="let image of serieService.elegirSerie.imagen">
+                          <img [src]="image" class="d-block w-100"  style="height: 300px ; width: 400px">
+                          <div class="carousel-caption">
+                            <h3>GALERIA DE FOTOS</h3>
+                          </div>
+                        </ng-template>
+                      </ngb-carousel>
+                    </div>
+                  </div>
+                </div>
+              <div class="form-control">
                 <label for="titulo">Titulo</label>
                 <input type="text" class="input-group" [(ngModel)]="serieService.elegirSerie.titulo" name="titulo"  readonly>
               </div>
@@ -87,7 +110,7 @@
                           readonly>{{serieService.elegirSerie.sinopsis}}</textarea>
                 <div>
                   <label for="categorias">Categoria</label>
-                  <input type="text" class="input-group" [(ngModel)]="serieService.elegirSerie.categorias" name="categorias" readonly>
+                  <input type="text" class="input-group" [(ngModel)]="categoria" name="categorias" readonly id="catego">
                 </div>
               </div>
             </div>

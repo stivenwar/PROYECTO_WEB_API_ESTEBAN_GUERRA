@@ -15,7 +15,6 @@ serieController.getSeries = async (req, res) => {
 
 serieController.createSerie = async (req, res) => {
     try{
-        console.log(req);
         const series = new Serie(req.body);
         console.log(series);
         const newSerie = await series.save()

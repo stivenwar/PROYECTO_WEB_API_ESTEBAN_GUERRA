@@ -3,10 +3,10 @@ const { Schema } = mongoose;
 
 const serieSchema =({
     id:{type:String},
-    imagen: {type: String,required:true},
+    imagen: [{type: String,required:true}],
     titulo: {type: String,required:true},
     capitulos:{type: String,required:true},
-    categorias:{type: String,required:true},
+    categorias:[{type: String,required:true}],
     emision:{type: String,required:true},
     sinopsis: {type: String,required:true}
 

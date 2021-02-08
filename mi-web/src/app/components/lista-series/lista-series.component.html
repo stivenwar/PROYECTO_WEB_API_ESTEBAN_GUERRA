@@ -1,17 +1,17 @@
  <div class="row ">
-      <div class="col col-3"  *ngFor="let s of series ">
+      <div class="col col-3" *ngFor="let s of series ">
         <div class="card " >
           <div class="card-header bg-transparent ">
             <a class="nav-link"  [routerLink]="['/lista-series/serie/',s._id]">
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 py-3">
-                    <h2 class="pb-2">Upcoming Events</h2>
-                    <ngb-carousel >
-                      <ng-template ngbSlide *ngFor="let image of images">
-                        <img [src]="image" class="d-block w-100" alt="Random slide" style="height: 500px ; width: 500px">
+                    <h2 class="pb-2">Imagenes de la Serie</h2>
+                    <ngb-carousel id="carousel">
+                      <ng-template ngbSlide *ngFor="let image of s.imagen">
+                        <img [src]="image" class="d-block w-100"  style="height: 300px ; width: 400px">
                         <div class="carousel-caption">
-                          <h3>Hola</h3>
+                          <h3>GALERIA DE FOTOS</h3>
                         </div>
                       </ng-template>
                     </ngb-carousel>
