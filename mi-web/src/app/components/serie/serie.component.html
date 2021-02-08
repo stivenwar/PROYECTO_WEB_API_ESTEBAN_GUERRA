@@ -1,10 +1,20 @@
 <div class="container ">
   <div class="row justify-content-md-center p-4">
-    <div class="col col-auto">
-        <div class="card border-primary text-center"   >
-         <div class="card-header bg-transparent border-primary" *ngIf="series">
-           <img src="{{serie?.imagen}}"  class="card-img-top p-1" height="500px" width="300px" alt="IMAGEN SERIE" >
-          <div class="card-body" >
+    <div class="col">
+        <div class="card border-primary text-center m-5 p-5" style="width: 50rem;"  >
+         <div class="card-header bg-transparent border-primary">
+           <h2 class="pb-2">Imagenes de la Serie</h2>
+          <div class="card-body">
+            <div class="container">
+              <ngb-carousel class="carousel" >
+                <ng-template ngbSlide *ngFor="let image of serie?.imagen">
+                  <img [src]="image" class="d-block w-100" >
+                  <div class="carousel-caption">
+                    <h3>GALERIA DE FOTOS</h3>
+                  </div>
+                </ng-template>
+              </ngb-carousel>
+            </div>
             <h5 class="card-title">TITILO : {{serie?.titulo}} </h5>
             <p class="card-text">CATEGORIA : {{serie?.categorias}} </p>
             <p class="card-text">CAPITULOS : {{serie?.capitulos}}</p>

@@ -21,17 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="nuevo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/models/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/models/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/editar-serie/editar-serie.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/lista-series/lista-series.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/navegacion/navegacion.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/modelos/serie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/services/serie-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/serie/serie.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +86,7 @@
       <workItem from="1612515678407" duration="10470000" />
       <workItem from="1612556980158" duration="13721000" />
       <workItem from="1612609569915" duration="14198000" />
-      <workItem from="1612732079975" duration="18885000" />
+      <workItem from="1612732079975" duration="21015000" />
     </task>
     <task id="LOCAL-00001" summary="nuevo">
       <created>1612133530719</created>
@@ -160,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612648575837</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="nuevo">
+      <created>1612753032157</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612753032157</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,10 +258,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612648579615">
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612753038070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612648579615" />
+    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612753038070" />
     <state x="1019" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1612524430676">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
