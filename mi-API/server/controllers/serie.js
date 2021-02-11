@@ -49,7 +49,7 @@ serieController.updateSerie = async (req,res) => {
             emision:req.body.emision,
             sinopsis:req.body.sinopsis
         };
-       const ser= await Serie.findOneAndUpdate(req.params._id, {$set: serie}, {new: true,
+       const ser= await Serie.findByIdAndUpdate(req.params.id, {$set: serie}, {new: true,
             useFindAndModify: false});
        console.log(ser)
        res.status(201).json({message: 'serie actualizada', serie: serie});
