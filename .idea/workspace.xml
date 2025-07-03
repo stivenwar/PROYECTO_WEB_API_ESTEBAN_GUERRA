@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,11 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="nuevo">
+    <list default="true" id="3925f69c-f133-418f-83d0-896364a46be2" name="Default Changelist" comment="retomando angular desde mi primero proyecto hasta su actualizacion a su ultima version">
+      <change afterPath="$PROJECT_DIR$/mi-API/server/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-API/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mi-API/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/mi-API/server/controllers/serie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/src/app/components/agregar-serie/agregar-serie.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mi-web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/mi-web/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +40,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="1nmcqfuCFvk4VpXytqrHD1pqGfB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,17 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../APP_ESTEBAN_GUERRA" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\esteb\WebstormProjects\PROYECTO_WEB_API_ESTEBAN_GUERRA\mi-web\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/esteb/Documents/GitHub/PROYECTO_WEB_API_ESTEBAN_GUERRA/mi-API/server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.info @ngmodule/material-carousel peerDependencies.executor": "Run",
+    "npm.install -g npm@8.executor": "Run",
+    "npm.install -g npm@version.executor": "Run",
+    "npm.install rxjs@6.3.3.executor": "Run",
+    "npm.view @ngmodule/material-carousel versions.executor": "Run",
+    "ts.external.directory.path": "C:\\Users\\esteb\\Documents\\GitHub\\PROYECTO_WEB_API_ESTEBAN_GUERRA\\mi-web\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\esteb\Documents\GitHub\PROYECTO_WEB_API_ESTEBAN_GUERRA\mi-API\server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\esteb\Desktop\PROYECTO_WEB_API_ESTEBAN_GUERRA\mi-API" />
     </key>
@@ -91,6 +116,9 @@
       <workItem from="1612869190214" duration="17000" />
       <workItem from="1612872771805" duration="1749000" />
       <workItem from="1613037824453" duration="3374000" />
+      <workItem from="1751450886417" duration="6288000" />
+      <workItem from="1751459799135" duration="1022000" />
+      <workItem from="1751533625503" duration="4580000" />
     </task>
     <task id="LOCAL-00001" summary="nuevo">
       <created>1612133530719</created>
@@ -185,102 +213,11 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="nuevo" />
-    <option name="LAST_COMMIT_MESSAGE" value="nuevo" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="976" y="218" key="FileChooserDialogImpl" timestamp="1612873175470">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="976" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1612873175470" />
-    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612369196915" />
-    <state x="824" y="418" key="Github.ShareDialog" timestamp="1612110297803">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="824" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612110297803" />
-    <state x="773" y="218" key="Github.UntrackedFilesDialog" timestamp="1612110304842">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="773" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612110304842" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1612872824723">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1612872824723" />
-    <state width="1899" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198811" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1612872824723">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1612872824723" />
-    <state width="1899" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198811" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1612872824723">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1612872824723" />
-    <state width="1899" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198811" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1612872824723">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1612872824723" />
-    <state width="1899" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198811" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1612369198811">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198811" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1612369198811">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198811" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.2.bottom" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.2.center" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.2.left" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.2.right" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.3.bottom" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.3.center" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.3.left" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state width="1899" height="348" key="GridCell.Tab.3.right" timestamp="1612369198812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1612369198812" />
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612755095486">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="617" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612755095486" />
-    <state x="1019" y="299" key="refactoring.ChangeSignatureDialog" timestamp="1612524430676">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1019" y="299" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612524430676" />
+    <MESSAGE value="retomando angular desde mi primero proyecto hasta su actualizacion a su ultima version" />
+    <option name="LAST_COMMIT_MESSAGE" value="retomando angular desde mi primero proyecto hasta su actualizacion a su ultima version" />
   </component>
 </project>

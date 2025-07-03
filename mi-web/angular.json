@@ -122,7 +122,6 @@
       }
     }
   },
-  "defaultProject": "mi-web",
   "cli": {
     "analytics": false
   }
